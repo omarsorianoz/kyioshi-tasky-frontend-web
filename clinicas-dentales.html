@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tasky Kyoshi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Agente, Agente conversacional, Inteligencia Artificial, Machine Learning" name="keywords">
+    <meta content="Servicios de Agentes con intelegencia artificial" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+       <!-- Navbar Start -->
+       <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white">Kyoshi<span class="text-dark">.</span>Agents</h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                        <!--<a href="especialidades.html" class="nav-item nav-link">Especialidades</a>-->
+                        <div class="nav-item dropdown">
+                            <a href="especialidades.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Especialidades</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="clinicas-dentales.html" class="dropdown-item">Clínicas Dentales</a>
+                                <a href="inmobiliarias.html" class="dropdown-item">Inmobilisarias</a>
+                                <a href="opticas.html" class="dropdown-item">Opticas</a>
+                                <a href="talleres_mecanicos.html" class="dropdown-item">Talleres Mecanicos</a>
+                                <a href="restaurantes.html" class="dropdown-item">Restaurantes</a>
+                                <a href="reclutamiento.html" class="dropdown-item">Reclutamiento</a>
+                            </div>
+                        </div>
+                        <a href="subscripciones.html" class="nav-item nav-link">Subscripciones</a>
+                        <a href="escenarios.html" class="nav-item nav-link">Escenarios</a>
+                        <a href="integraciones.html" class="nav-item nav-link">Integraciones</a>
+                        
+                        <!--<div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="team.html" class="dropdown-item">Nuestro Equipo</a>
+                                <a href="faq.html" class="dropdown-item">Preguntas Frecuentes</a>
+                                <a href="testimonial.html" class="dropdown-item">Casos de Exito</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>-->
+                        <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
+                    </div>
+                    <!--<butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>-->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Clínicas Dentales</h1>
+                    <!--<nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Contact Us</li>
+                        </ol>
+                    </nav>-->
+                    <a href="subscripciones.html" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Ver
+                        Planes</a>
+                    <a href="contact.html"
+                        class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Solicitar
+                        Demo</a>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img/hero-img.png" alt="" style="max-height: 300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero End -->
+
+
+ 
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img">
+                    <img class="img-fluid" src="img/Inteligencia-artificial-dental.jpg">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Kyoshi.Agents</div>
+                <h1 class="mb-4">Atención al paciente y la educación dental</h1>
+                <p class="mb-4">
+                    <br/>   
+                <h4>Nuestro <font style="color: cornflowerblue;">Proposito</font></h4>
+                </p>
+                <p class="mb-4">Es que Tasky nos ayude a prestar un cuidado más efectivo y humano, enfocado no solo a la enfermedad, sino sobre todo a la persona que la padece.
+                </p>
+                <br/>
+        
+                <h4>Problemas específicos que <font style="color: cornflowerblue;">resuelve</font></h4>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><font style="color: cornflowerblue;">80% de pacientes no confirman sus citas</font>
+                             → Consultorios vacíos, pérdida directa de ingresos
+                        </h6>
+                        
+                    </div>
+                    <div class="col-sm-6">
+                        
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <h4>Otros problemas <font style="color: cornflowerblue;">que resuelve</font></h4>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><font style="color: cornflowerblue;">Secretaria saturada con llamadas repetitivas </font>→ No puede enfocarse en atención al paciente presencial
+                        </h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><font style="color: cornflowerblue;">Pacientes llaman fuera de horario</font>→ Se van con la competencia que sí responde</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i><font style="color: cornflowerblue;">Reagendado manual consume 2-3 horas diarias</font>→ Tiempo valioso que podrías usar atendiendo pacientes</h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i><font style="color: cornflowerblue;">Seguimiento post-tratamiento inconsistente</font>→ Pacientes no regresan para completar tratamientos</h6>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mt-4">
+                    <!--<a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>-->
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                    <!--<a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>-->
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                    <!--<a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Kyoshi.Agents</div>
+                    <h1 class="text-white mb-4">Integraciones Funcionales</h1>
+                    <p class="text-light mb-4">Con Software Dental:</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Dentrix, Eaglesoft, Open Dental → Sincronización automática de citas</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Practice Management Software → Actualización de historiales</span>
+                    </div>
+                    <p class="text-light mb-4">Con Herramientas de Comunicación:</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>WhatsApp Business → Confirmaciones y recordatorios automáticos</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Practice Management Software → Actualización de historiales</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>+ 30 Agentes creados en diversos Idiomas</span>
+                    </div>
+                    <!--
+                    <div class="row g-4 pt-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                    <p class="text-white mb-0">Clientes Felices</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                    <p class="text-white mb-0">Project Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/feature.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Case Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Kyoshi.Agents</div>
+                <h1 class="mb-4">Integraciones <font style="color: cornflowerblue;">Disponibles</font>
+                </h1>
+                <p>Nuestros agentes conversacionales se integran perfectamente con múltiples plataformas y servicios
+                    para proporcionar una experiencia sin interrupciones.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-1.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Integre nuestros agentes conversacionales con su sistema CRM existente para mantener
+                                datos de clientes actualizados.</small>
+                            <h5 class="lh-base text-white mb-3">CRM y Gestión de Clientes
+                            </h5>
+                            <p>
+                                <ul>
+                                    <li style="text-align:left;color: cornsilk;">Salesforce</li>
+                                    <li style="text-align:left;color: cornsilk;">HubSpot</li>
+                                    <li style="text-align:left;color: cornsilk;">Microsoft Dynamics</li>
+                                    <li style="text-align:left;color: cornsilk;">Zoho CRM</li>
+                                </ul>
+                            </p>
+                            <!--<span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>-->|
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-2.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Conecte nuestros agentes con su tienda online para automatizar consultas sobre
+                                pedidos y productos.</small>
+                            <h5 class="lh-base text-white mb-3">Plataformas de Comercio Electrónico
+                            </h5>
+                            <p>
+                                <ul>
+                                    <li style="text-align:left;color: cornsilk;">Shopify</li>
+                                    <li style="text-align:left;color: cornsilk;">WooCommerce</li>
+                                    <li style="text-align:left;color: cornsilk;">Magento</li>
+                                    <li style="text-align:left;color: cornsilk;">PrestaShop</li>
+                                </ul>
+                            </p>
+                            <!--<span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>-->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-3.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Integre con su software de gestión de citas para automatizar agendas y
+                                confirmaciones.</small>
+                            <h5 class="lh-base text-white mb-3">Sistemas de Reservas y Citas</h5>
+                            <p>
+                                <ul>
+                                    <li style="text-align:left;color: cornsilk;">Calendly</li>
+                                    <li style="text-align:left;color: cornsilk;">Acuity Scheduling</li>
+                                    <li style="text-align:left;color: cornsilk;">SimplyBook.me</li>
+                                    <li style="text-align:left;color: cornsilk;">Zoho Bookings</li>
+                                </ul>
+                            </p>
+                            <!--<span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-4.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Conecte con sus plataformas de marketing para gestionar leads y campañas.</small>
+                            <h5 class="lh-base text-white mb-3">Herramientas de Marketing
+                            </h5>
+                            <p>
+                                <ul>
+                                    <li style="text-align:left;color: cornsilk;">Mailchimp</li>
+                                    <li style="text-align:left;color: cornsilk;">SendGrid</li>
+                                    <li style="text-align:left;color: cornsilk;">HubSpot Marketing
+                                    </li>
+                                    <li style="text-align:left;color: cornsilk;">ActiveCampaign</li>
+                                </ul>
+                            </p>
+                            <!--<span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>-->|
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-5.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Integre con sus sistemas telefónicos actuales para una experiencia unificada.</small>
+                            <h5 class="lh-base text-white mb-3">Plataformas de Telefonía VoIP
+                            </h5>
+                            <p>
+                                <ul>
+                                    <li style="text-align:left;color: cornsilk;">Twilio</li>
+                                    <li style="text-align:left;color: cornsilk;">Vonage</li>
+                                    <li style="text-align:left;color: cornsilk;">RingCentral</li>
+                                    <li style="text-align:left;color: cornsilk;">3CX</li>
+                                </ul>
+                            </p>
+                            <!--<span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>-->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-6.jpg" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Conecte nuestros agentes con cualquier servicio web mediante integraciones API
+                                personalizadas.</small>
+                            <h5 class="lh-base text-white mb-3">APIs Personalizadas</h5>
+                            <p>
+                                <ul>
+                                    <li style="text-align:left;color: cornsilk;">REST APIs
+                                    </li>
+                                    <li style="text-align:left;color: cornsilk;">GraphQL</li>
+                                    <li style="text-align:left;color: cornsilk;">Webhooks</li>
+                                    <li style="text-align:left;color: cornsilk;">SOAP Services</li>
+                                </ul>
+                            </p>
+                            <!--<span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Case End -->
+
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
+                <h1 class="mb-4">Preguntas Frecuentes</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Que es Tasky?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Tasky es una plataforma de IA conversacional que permite a las empresas automatizar
+                                    la atención al cliente, ventas y marketing a través de Agentes inteligentes, Vía
+                                    Telefonica y WhatsApp automatizado. Con Tasky, puedes crear soluciones de
+                                    comunicación personalizadas y escalables que mejoran la experiencia del usuario e
+                                    incrementan tus ventas y/o atención al cliente. Tasky permite integrar Agentes
+                                    inteligentes que brindan respuestas rápidas y eficientes, reduciendo la carga
+                                    operativa y mejorando la satisfacción del cliente. Además, su capacidad de
+                                    automatización en WhatsApp y otras aplicaciones facilita una atención al cliente
+                                    24/7, lo que convierte a Tasky en una herramienta esencial para las empresas que
+                                    desean potenciar su estrategia de comunicación digital.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Qué canales puedo usar con Tasky?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Con Tasky podrás gestionar la IA conversacional con tus clientes a través de
+                                    múltiples canales, como WhatsApp, Facebook Messenger, Instagram, vía telefonica,
+                                    entre otros. Los casos de uso donde puedes potencializarlo es: marketing, ventas y
+                                    atención al cliente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Pueden los agentes de Tasky hablar en diversos idiomas?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Los Agentes que ofrece la plataforma, estan preparados para proporcionar una
+                                    atención en multiples lenguajes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    ¿Qué es Tasky y cómo puede beneficiar a mi empresa?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Tasky es una plataforma de IA conversacional para empresas y negocios que permite
+                                    crear Agentes inteligentes y automatizar la interacción con clientes de manera más
+                                    fluida. Tasky mejora la atención al cliente, reduce los tiempos de respuesta y
+                                    facilita la gestión de interacciones de forma escalable. Además, ofrece análisis
+                                    detallados que ayudan a optimizar la experiencia del usuario y mejorar la eficiencia
+                                    operativa.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    ¿Cual es el horario de atención del Agente?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Gracias a la Tasky, todos los canales de comunicación están a disposición del
+                                    usuario las 24 horas del día, los 7 días de la semana. Esa sensación de soporte
+                                    veloz y constante es clave para tus clientes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    ¿Necesito Adquirir Infraestructura para el funcionamiento de Tasky en mi negocio?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Tasky funciona en tu oficina, negocio o empresa, sin adquision de infraestructura,
+                                    porque se trata de un servicio SAS, donde unicamente pagas lo que consumes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Al adquirir un Agente, ¿ Necesita algún mantenimiento?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Los Agentes necesitan una revisión, un mantenimiento y una optimización constantes
+                                    en cuanto a su base de conocimientos y a la forma en que deben comunicarse con los
+                                    clientes. Hay que alimentar al Agente con datos (es decir, contenidos) nuevos y
+                                    significativos que puedan responder a las preguntas y consultas de los clientes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    ¿Que volumen de consultas puede atender Tasky?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Los Agentes son programados para atender a varios clientes simultáneamente. Son
+                                    capaces de resolver miles de preguntas en pocos segundos de manera eficiente. Para
+                                    lograrlo, el software debe recibir información en su sistema sobre las inquietudes
+                                    más frecuentes de los clientes sobre el producto o servicio que se esté ofreciendo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Kioshi.Agents</div>
+                    <h1 class="mb-4">Escenarios de <font style="color: cornflowerblue;">Aplicación</font>
+                    </h1>
+                    <p class="mb-4">Nuestros agentes conversacionales pueden adaptarse a diversos escenarios de negocio.
+                        Conozca cómo pueden ayudar a su empresa en diferentes situaciones.</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="contact.html">Solicitar escenario personalizado</a>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
+                                        <h5 class="mb-0">Recepcionista telefónica</h5>
+                                        <br />
+                                        <small>Atención de llamadas entrantes y gestión de agenda</small>
+                                        <br />
+                                        <br />
+                                        <div>
+                                            <li style="text-align:left;color: dodgerblue;">Recibe llamadas con
+                                                comportamiento y voces naturales
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Consulta calendario de citas
+                                                y puede agendar nuevas citas
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Recupera información
+                                                relevante de la llamada
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Se configura con base de
+                                                conocimiento de productos y servicios
+                                            </li>
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">
+                                        <h5 class="mb-0">Agente de Bienes Raíces / Asistente de seguimientos</h5>
+                                        <br />
+                                        <small>Seguimiento a oportunidades y actualización de estados</small>
+                                        <br />
+                                        <br />
+                                        <div>
+                                            <li style="text-align:left;color: dodgerblue;">Realiza llamadas de
+                                                seguimiento de servicios o tickets
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Recupera información valiosa
+                                                durante la conversación
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Consulta estados de pedidos y
+                                                actualiza información
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Confirma citas y califica
+                                                prospectos
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Manejo adaptado de objeciones
+                                                según el evento
+                                            </li>
+                                            <br />
+                                            <br />
+                                            <br />
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
+                                        <h5 class="mb-0">Reclutadora</h5>
+                                        <br />
+                                        <small>Entrevistas iniciales y evaluación de candidatos
+
+                                        </small>
+                                        <br />
+                                        <br />
+                                        <div>
+                                            <li style="text-align:left;color: dodgerblue;">Realiza entrevistas
+                                                programadas según base de conocimiento
+
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Identifica estado de ánimo y
+                                                personalidad del entrevistado
+
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Genera resumen de evaluación
+                                                completo
+
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Puede transferir llamadas
+                                                según criterios establecidos
+
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Consulta información técnica
+                                                y reagenda citas cuando es necesario
+
+
+                                            </li>
+                                            <br />
+                                            <br />
+                                            <br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">
+                                        <h5 class="mb-0">Call Center y Campañas</h5>
+                                        <br />
+                                        <small>Gestión de llamadas masivas y campañas telefónicas </small>
+                                        <br />
+                                        <br />
+                                        <div>
+                                            <li style="text-align:left;color: dodgerblue;">Realiza hasta 50 llamadas
+                                                simultáneas en lotes
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Ofrece servicios e
+                                                información de campañas específicas
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Registra pedidos y coordina
+                                                entre múltiples agentes
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Diferentes roles:
+                                                información, agendamiento, soporte técnico y ventas
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Consulta APIs del cliente
+                                                para obtener información en tiempo real
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Envía notificaciones y
+                                                transfiere llamadas en situaciones especiales
+                                            </li>
+                                            <br />
+                                            <br />
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-5.jpg" alt="">
+                                        <h5 class="mb-0">Preventa o ventas
+                                        </h5>
+                                        <br />
+                                        <small>Calificación de prospectos y manejo de objeciones
+                                        </small>
+                                        <br />
+                                        <br />
+                                        <div>
+                                            <li style="text-align:left;color: dodgerblue;">Realiza o recibe llamadas de
+                                                promoción e información
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Califica prospectos según
+                                                criterios personalizados
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Transfiere llamadas a
+                                                ejecutivos cuando es necesario
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Manejo efectivo de objeciones
+                                                predefinidas
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Memoria de conversaciones
+                                                anteriores para seguimientos complejos
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Consulta y actualiza
+                                                información del cliente en sistemas
+                                            </li>
+                                            <br />
+                                            <br />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-6.jpg" alt="">
+                                        <h5 class="mb-0">Mesa de soporte / Satisfacción al cliente
+                                        </h5>
+                                        <br />
+                                        <small>Atención de problemas y gestión de tickets
+
+                                        </small>
+                                        <br />
+                                        <br />
+                                        <div>
+                                            <li style="text-align:left;color: dodgerblue;">Recibe llamadas de soporte y
+                                                genera tickets de atención
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Registra quejas por fallas en
+                                                servicios o productos
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Recibe calificaciones del
+                                                servicio y sugerencias
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Analiza patrones de fallas
+                                                comunes
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Da instrucciones al usuario y
+                                                asigna tickets
+                                            </li>
+                                            <li style="text-align:left;color: dodgerblue;">Consulta sistemas del cliente
+                                                sobre estados de tickets
+                                            </li>
+                                            <br />
+                                            <br />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
+                    <h1 class="mb-4">Testimonios de Nuestros Clientes!</h1>
+                    <p class="mb-4">Póngase en contacto con nuestro equipo de consultores certificados para encontrar al
+                        Agente experto que se adapte a sus necesidades.</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="contact.html">Solicitar integración personalizada</a>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary">
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Tasky permite hacer un enorme 2 por 1. Permite agilizar las operaciones al
+                                tiempo que ofrece a los usuarios finales una enorme mejora de su experiencia de usuario.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Ana Laura Galindo Vera</h5>
+                                    <span>CEO Spa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Tasky me ha cambiado las reglas del juego a la hora de gestionar las tareas
+                                relacionadas con las consultas de los clientes y de gestionarlas con eficacia. Antes
+                                tenía que buscar y resolver manualmente los problemas de los clientes, pero ahora el
+                                Agente se encarga de eso. </p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Francisco Segoviano</h5>
+                                    <span>E-commerce</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Para mí, la característica más brillante es la posibilidad de
+                                personalización infinitas, lo que significa que puedo crear y ajustar el flujo de
+                                trabajo exactamente como quiero.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Daniel Tapia</h5>
+                                    <span>Atención a Clientes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Me encanta el soporte del equipo de Tasky , son realmente útiles con
+                                cualquier tipo de problema o idea que puedas tener para tu Agente. </p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Gloria Torres Alcantara</h5>
+                                    <span>Ventas Granja Porcina</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Para mí, la característica más brillante es: - Posibilidades de
+                                personalización infinitas, lo que significa que puedo crear y ajustar el flujo de
+                                trabajo exactamente como quiero.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-5.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Daniel Tapia</h5>
+                                    <span>Atención a Clientes</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Tasky ayuda a mi empresa -y a las empresas a las que prestan servicio- a
+                                mejorar la captación de clientes, las bases de conocimientos internas, la generación de
+                                clientes potenciales y mucho más.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-6.jpg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Bruno Alcazar</h5>
+                                    <span>CEO Empresa Constructo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary newsletter py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Boletín de Noticias</div>
+                    <h1 class="text-white mb-4">Suscríbete al boletín</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                            placeholder="Ingresa tu Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">Pronto tendras noticias de Tasky, sé el primero en recibir
+                        actualizaciones de la plataforma</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="text-white">Kyoshi<span class="text-primary">.</span>Agents</h1>
+                    </a>
+                    <p class="mb-0">Ofrece experiencias conversacionales auténticas impulsadas por IA Vía Telefonica y
+                        WhatsApp,
+                        utilizando Tasky, la plataforma más potente, especializada y completa</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Ponte en Contacto</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Av. P.º de la Reforma 42-Primer, Centro, Cuauhtémoc,
+                        06040 Ciudad de México, CDMX</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+52 5596023400</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@kyoshi.com</p>
+                    <div class="d-flex pt-2">
+                        <!--<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>-->
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <!--<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>-->
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <!--<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>-->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Links Populares</h5>
+                    <a class="btn btn-link" href="">Acerca de Nosotros</a>
+                    <a class="btn btn-link" href="">Contactanos</a>
+                    <a class="btn btn-link" href="">Politicas de Privacidad</a>
+                    <a class="btn btn-link" href="">Terminos y Condiciones</a>
+                    <!--<a class="btn btn-link" href="">Career</a>-->
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Nuestro Servicios</h5>
+                    <a class="btn btn-link" href="">Agentes Conversacionales</a>
+                    <a class="btn btn-link" href="">Machine learning</a>
+                    <a class="btn btn-link" href="">Analisis Predictivo</a>
+                    <a class="btn btn-link" href="">Data Science</a>
+                    <a class="btn btn-link" href="">ChatBots</a>
+                </div>
+            </div>
+        </div>
+        <!--<div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                        
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
